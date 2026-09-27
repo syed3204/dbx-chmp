@@ -1,0 +1,10 @@
+command:
+  - streamlit
+  - run
+  - app.py
+  - --server.port
+  - "$DATABRICKS_APP_PORT"
+
+env:
+  - name: DATABRICKS_CONNECT_SERVERLESS
+    value: "true"
